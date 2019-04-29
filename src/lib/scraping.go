@@ -86,8 +86,8 @@ func IsTodayNews(doc *goquery.Document) bool {
 	timeDate, _ := time.Parse(TimeFormat, strDate)
 	//timeDate, _ := time.Parse(TimeFormat, "2019年4月29日")
 
-	//now := time.Now()
-	now := time.Date(2019, 4, 2, 0, 0, 0, 0, time.Local)
+	now := time.Now()
+	//now := time.Date(2019, 4, 2, 0, 0, 0, 0, time.Local)
 
 	sub := timeDate.Sub(now)
 
